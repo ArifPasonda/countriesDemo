@@ -1,0 +1,32 @@
+<div id="table-scroll" class="table-scroll">
+    <div id="faux-table" class="faux-table" aria="hidden">
+      <table id="" class="main-table">
+      </table>
+      <table id="" class="main-table">
+        <tfoot>
+          <tr>
+            <td colspan="3"><button (click)="clearResult()">Clear</button></td>
+          </tr>
+        </tfoot>
+      </table></div>
+    <div class="table-wrap">
+      <table id="main-table" class="main-table">
+          <tbody>
+            <tr style="background-color: #ccc;">
+                <th>Name</th>
+                <th>Capital</th>
+                <th>Currency</th>
+      </tr>
+        </tbody>
+        
+        <tbody>
+        <tr *ngFor="let country of countries let i = index" (click)="getCountryByName(country,i)" [class.active]="i==selectedRow">
+            <td>{{country.name}}</td>
+            <td>{{country.capital}}</td>
+            <td>{{country.currencies[0].symbol}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

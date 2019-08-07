@@ -1,0 +1,9 @@
+<div class="topnav">
+    <h1 class="head_text">Text Exercise</h1>
+    <div class="btn_hold">
+        <button (click)="getCountryData($event, 'europe')">
+            Europe</button>
+        <button (click)="getCountryData($event, 'asia')">Asia</button>
+        <input type="text" placeholder="Search countries" [(ngModel)]="searchValue" (keydown)="keyDownFunction($event)">
+    </div>
+</div>

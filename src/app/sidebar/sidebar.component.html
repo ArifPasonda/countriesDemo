@@ -1,0 +1,12 @@
+<div *ngIf="isDisplay;else blank_content">
+    <div>Name:{{countryDetails.name}} </div>
+    <div>Area:{{countryDetails.area}} sq km</div>
+    <div>Languages:{{countryDetails.languages[0].name}}</div>
+    <div>Population:{{countryDetails.population}}</div>
+</div>
+<ng-template #blank_content>
+    <div>Name:</div>
+    <div>Area:</div>
+    <div>Languages:</div>
+    <div>Population:</div>
+</ng-template>

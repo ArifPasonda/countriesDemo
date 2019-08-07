@@ -1,0 +1,38 @@
+.topnav {
+    overflow: hidden;
+    background-color: #f2f2f2;
+    width: 50%;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: rgba(228, 225, 225, 0.795);
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .btn_hold{
+    width: 64%;
+    float: left;
+    position: relative;
+    top: 30px;
+  }
+  .btn_hold button, .btn_hold input{
+    margin-right: 20px;
+  }
+  .head_text{
+    width: 220px;
+    float: left;
+  }
+
